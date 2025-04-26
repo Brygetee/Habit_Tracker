@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title><head>
+  <meta charset="UTF-8">
+  <title>Habit_Tracker</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+  <script defer>
+    document.addEventListener('DOMContentLoaded', () => {
+      const header = document.querySelector('.vertical-header');
+      if (header) {
+        header.addEventListener('mouseenter', () => header.classList.add('expanded'));
+        header.addEventListener('mouseleave', () => header.classList.remove('expanded'));
+      }
+    });
+  </script>
+</head>
+<body>
+  <!-- Vertical Header Sidebar -->
+  <aside class="vertical-header">
+    <h1>Brygetee</h1>
+    <nav class="nav-links">
+      <a href="#">Home</a>
+      <a href="/about">My Habits</a>
+      <a href="#">My Progress</a>
+        <a href="#">My Account</a>
+    </nav>
+  </aside>
+</title>
+</head>
+<body>
+
+</body>
+</html>

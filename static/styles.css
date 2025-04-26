@@ -1,0 +1,70 @@
+/* General Reset */
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+
+/* Vertical Header Sidebar - Positioned on the right side */
+.vertical-header {
+  width: 80px;
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 100vh;
+  background-color: #f7d9e3;
+  background-image: url('data:image/svg+xml;utf8,<svg viewBox="0 0 200 800" xmlns="http://www.w3.org/2000/svg"><path fill="%23f7d9e3" d="M0,0 C60,200 140,600 200,800 L0,800 Z"/></svg>');
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #333;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 2rem;
+  box-shadow: -2px 0 5px rgba(0, 0, 0, 0.1);
+  transition: width 0.3s ease;
+  z-index: 2;
+}
+
+.vertical-header:hover {
+  width: 200px;
+}
+
+.vertical-header h1 {
+  font-size: 1.2rem;
+  transform: rotate(90deg);
+  margin-top: 5rem;
+  margin-bottom: 8rem;
+  color: #c0567b;
+}
+
+.nav-links {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6rem;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #c0567b;
+  font-weight: 500;
+  font-size: 1rem;
+  transform: rotate(90deg);
+  transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: #9c2f57;
+}
+
+/* Main Content Styling */
+.main-content {
+  padding: 2rem;
+  text-align: center;
+  margin-right: 80px; /* Space for the header */
+  z-index: 1;
+}
